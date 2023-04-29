@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import logo from './assets/img/jl2.png';
 import './App.css';
+import NavBar from './components/NavBar';
+import Texto from './components/TextoJL';
+import { Text } from "@nextui-org/react";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <NavBar></NavBar>
+    <section className='inicio' display='space-between'>
+        <div>
+          <Texto></Texto>
+        </div>
+        <img src={logo} id='jl' />
+    </section>
+    </>
   );
 }
 
