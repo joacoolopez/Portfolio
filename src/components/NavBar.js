@@ -1,6 +1,6 @@
     import React from "react";
     import { Navbar, useTheme } from "@nextui-org/react";
-    import 'C:\\Users\\joaqu\\Desktop\\Aplicaciones\\portfolio\\portfolio\\src\\App.css'
+    import '../App.css'
     import logo from '../assets/img/jl.png'
     
     export default function NavBar() {
@@ -26,8 +26,8 @@
             <img src={logo} id="jl2"/>
             </Navbar.Brand>
             <Navbar.Content activeColor={activeColor} hideIn="xs" variant={variant}>
-              <Navbar.Link href="#">Features</Navbar.Link>
-              <Navbar.Link href="#" isActive>Customers</Navbar.Link>
+              <Navbar.Link href="#" isActive>Inicio</Navbar.Link>
+              <Navbar.Link href="#" >Experiencia</Navbar.Link>
               <Navbar.Link href="#">Pricing</Navbar.Link>
               <Navbar.Link href="#">Company</Navbar.Link>
             </Navbar.Content>

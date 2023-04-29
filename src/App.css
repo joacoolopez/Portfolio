@@ -8,16 +8,22 @@
   display: inline-block;
 }
 
+.NavBar{
+  height: 30vh;
+}
+
 .inicio{
-  margin: 7%;
+  height: 100vh;
+  padding: 0 7%;
   justify-content: space-around;
   align-items: center;
   display: flex;
 
 }
 
-.section{
- height: 100vh;
+.segundaparte{
+  height: 70vh;
+  padding: 0 10%;
 }
 
 #jl{
@@ -32,11 +38,19 @@
 
   @media screen and (max-width: 650px) {
     .inicio{
-      display: inline-block;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      
     }
 
     #jl{
       display: none;
     }
   
+}
+
+.centrar{
+  display: flex;
+  justify-content: center;
 }
