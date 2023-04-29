@@ -54,3 +54,11 @@
   display: flex;
   justify-content: center;
 }
+
+.botones{
+  display: flex;
+}
+
+.boton{
+  margin: 10px 10px 10px 0;
+}

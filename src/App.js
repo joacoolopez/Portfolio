@@ -14,7 +14,14 @@ function App() {
     <section className='inicio' display='space-between'>
         <div>
           <Texto></Texto>
-        
+          <div className='botones'>
+            <Button auto color="gradient" rounded bordered className='boton'>
+            Gradient
+            </Button>
+            <Button auto color="gradient" rounded bordered className='boton'>
+            Gradient
+            </Button>
+          </div>
         </div>
         <img src={logo} id='jl' />
     </section>
