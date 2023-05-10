@@ -22,7 +22,7 @@
 }
 
 .segundaparte{
-  height: 70vh;
+  height: auto;
   padding: 0 10%;
 }
 
@@ -47,6 +47,13 @@
     #jl{
       display: none;
     }
+
+    .cartas{
+
+      flex-direction: column;
+    }
+
+
   
 }
 
@@ -61,4 +68,36 @@
 
 .boton{
   margin: 10px 10px 10px 0;
+}
+
+/* .link{
+  margin:  0px 9px 0px 9px;
+} */
+
+.navv{
+
+  height:auto !important;
+}
+
+.AcercaDeMi{
+  height: 70vh;
+  padding: 0 10%;
+}
+
+
+.carta{
+  background-color: #16181A;
+  display: flex;
+  border-radius: 10px;
+  padding: 10px;
+  height: 140px;
+  width: 140px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartas{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: row;
 }

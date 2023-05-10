@@ -1,8 +1,8 @@
-import { Navbar, Link, Text, Avatar, Dropdown } from "@nextui-org/react";
-import { Layout } from "./Layout.js";
-import { AcmeLogo } from "./AcmeLogo.js";
+import { Navbar, Text,  Avatar, Dropdown } from "@nextui-org/react";
+import { Link } from "react-scroll";
+import '../App.css'
 
-export default function App() {
+export default function NavBarMejorado() {
   const collapseItems = [
     "Profile",
     "Dashboard",
@@ -16,8 +16,13 @@ export default function App() {
     "Log Out",
   ];
 
+        {/* <Link className="link" to='segundaparte' smooth={true} offset={200} duration={500} color="secondary" >
+            <Navbar.Item>
+            Experiencia
+            </Navbar.Item>
+        </Link> */}
+
   return (
-    <Layout>
       <Navbar isBordered variant="sticky">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
@@ -27,7 +32,7 @@ export default function App() {
             },
           }}
         >
-          <AcmeLogo />
+          {/* logo */}
           <Text b color="inherit" hideIn="xs">
             ACME
           </Text>
@@ -37,13 +42,31 @@ export default function App() {
           activeColor="secondary"
           hideIn="xs"
           variant="highlight-rounded"
+          
         >
-          <Navbar.Link href="#">Features</Navbar.Link>
-          <Navbar.Link isActive href="#">
-            Customers
-          </Navbar.Link>
-          <Navbar.Link href="#">Pricing</Navbar.Link>
-          <Navbar.Link href="#">Company</Navbar.Link>
+        
+        
+        <Link  onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} smooth={true} offset={200} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Inicio</Text>
+            </Navbar.Item>
+        </Link>
+        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Experiencia</Text>
+            </Navbar.Item>
+        </Link>
+        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Acerca de mi</Text>
+            </Navbar.Item>
+        </Link>
+        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Contacto</Text>
+            </Navbar.Item>
+        </Link>
+
         </Navbar.Content>
         <Navbar.Content
           css={{
@@ -53,72 +76,23 @@ export default function App() {
             },
           }}
         >
-          <Dropdown placement="bottom-right">
-            <Navbar.Item>
-              <Dropdown.Trigger>
-                <Avatar
-                  bordered
-                  as="button"
-                  color="secondary"
-                  size="md"
-                  src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-                />
-              </Dropdown.Trigger>
-            </Navbar.Item>
-            <Dropdown.Menu
-              aria-label="User menu actions"
-              color="secondary"
-              onAction={(actionKey) => console.log({ actionKey })}
-            >
-              <Dropdown.Item key="profile" css={{ height: "$18" }}>
-                <Text b color="inherit" css={{ d: "flex" }}>
-                  Signed in as
-                </Text>
-                <Text b color="inherit" css={{ d: "flex" }}>
-                  zoey@example.com
-                </Text>
-              </Dropdown.Item>
-              <Dropdown.Item key="settings" withDivider>
-                My Settings
-              </Dropdown.Item>
-              <Dropdown.Item key="team_settings">Team Settings</Dropdown.Item>
-              <Dropdown.Item key="analytics" withDivider>
-                Analytics
-              </Dropdown.Item>
-              <Dropdown.Item key="system">System</Dropdown.Item>
-              <Dropdown.Item key="configurations">Configurations</Dropdown.Item>
-              <Dropdown.Item key="help_and_feedback" withDivider>
-                Help & Feedback
-              </Dropdown.Item>
-              <Dropdown.Item key="logout" withDivider color="error">
-                Log Out
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
         </Navbar.Content>
         <Navbar.Collapse>
-          {collapseItems.map((item, index) => (
-            <Navbar.CollapseItem
-              key={item}
-              activeColor="secondary"
-              css={{
-                color: index === collapseItems.length - 1 ? "$error" : "",
-              }}
-              isActive={index === 2}
-            >
-              <Link
-                color="inherit"
-                css={{
-                  minWidth: "100%",
-                }}
-                href="#"
-              >
-                {item}
-              </Link>
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Inicio</Link>
             </Navbar.CollapseItem>
-          ))}
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+            </Navbar.CollapseItem>
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+            </Navbar.CollapseItem>
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+            </Navbar.CollapseItem>
+
         </Navbar.Collapse>
       </Navbar>
-    </Layout>
+
   );
 }
