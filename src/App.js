@@ -4,6 +4,7 @@ import NavBar from './components/NavBar';
 import Texto from './components/TextoJL';
 import Experiencia from './components/Experiencia';
 import Formacion from './components/Formacion';
+import Cards from './components/Cards';
 import { Text, Button } from "@nextui-org/react";
 
 
@@ -26,11 +27,14 @@ function App() {
         <img src={logo} id='jl' />
     </section>
     <section className='segundaparte'>
+    <Text h1 className='centrar'>Tecnologias</Text>
+      <Cards></Cards>
       <Text h1 className='centrar'>Experiencia</Text>
       <Experiencia></Experiencia>
       <Text h1 className='centrar'>Formacion</Text>
       <Formacion></Formacion>
-
+      
+      
 
     </section>
     </>
