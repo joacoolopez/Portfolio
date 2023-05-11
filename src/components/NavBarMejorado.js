@@ -47,17 +47,17 @@ export default function NavBarMejorado() {
             <Text size="$md" className="navv"> Inicio</Text>
             </Navbar.Item>
         </Link>
-        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+        <Link  to='segundaparte' smooth={true} offset={-70} duration={500} color="text">
             <Navbar.Item block color="secondary">
-            <Text size="$md" className="navv"> Experiencia</Text>
+            <Text size="$md" className="navv"> Formacion</Text>
             </Navbar.Item>
         </Link>
-        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+        <Link  to='AcercaDeMi' smooth={true} offset={-70} duration={500} color="text">
             <Navbar.Item block color="secondary">
             <Text size="$md" className="navv"> Acerca de mi</Text>
             </Navbar.Item>
         </Link>
-        <Link  to='segundaparte' smooth={true} offset={200} duration={500} color="text">
+        <Link  to='Contacto' smooth={true} offset={200} duration={500} color="text">
             <Navbar.Item block color="secondary">
             <Text size="$md" className="navv"> Contacto</Text>
             </Navbar.Item>
@@ -89,13 +89,13 @@ export default function NavBarMejorado() {
                 <Link onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} smooth={true} offset={200} duration={500} block color="secondary" >Inicio</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+                <Link to='segundaparte' smooth={true} offset={-70} duration={500} block color="secondary" >Formacion</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Acerca de mi</Link>
+                <Link to='AcercaDeMi' smooth={true} offset={-70} duration={500} block color="secondary" >Acerca de mi</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Contacto</Link>
+                <Link to='Contacto' smooth={true} offset={200} duration={500} block color="secondary" >Contacto</Link>
             </Navbar.CollapseItem>
 
         </Navbar.Collapse>

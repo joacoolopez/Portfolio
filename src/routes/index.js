@@ -31,20 +31,21 @@ function Index() {
     </section>
     <section className='segundaparte'>
       
-      <Text h1 className='centrar'>Experiencias</Text>
+      <Text h1 className='centrar principal'>Formacion</Text>
+      <Text h2 className='centrar'>Experiencia</Text>
       <Experiencia></Experiencia>
-      <Text h1 className='centrar'>Formacion</Text>
+      <Text h2 className='centrar'>Educacion</Text>
       <Formacion></Formacion>
     </section>
     <section className='AcercaDeMi'>
-      <Text h1 className='centrar'>Acerca de Mi</Text>
+      <Text h1 className='centrar principal acerca'>Acerca de Mi</Text>
       <Text h2 className='centrar'>Tecnologias</Text>
       <Cards></Cards>
       <Text h2 className='centrar'>Soft-Skills  </Text>
       <SoftSkills></SoftSkills>
     </section>
-    <section className='Contacto'>
-    <Text h1 className='centrar'>Contacto</Text>
+    <section className='Contacto principal'>
+    <Text h1 className='centrar principal'>Contacto</Text>
     <Contacto></Contacto>
     </section>
     </>
