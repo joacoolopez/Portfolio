@@ -8,16 +8,24 @@ import Formacion from './components/Formacion';
 import Cards from './components/Cards';
 import AcercaDeMi from './components/AcercaDeMi';
 import SoftSkills from './components/SoftSkills';
-import { Text, Button, Navbar} from "@nextui-org/react";
+import Contacto from './components/Contacto';
+import SignIn from './routes/SignIn';
+import { Text, Button, Navbar, Input} from "@nextui-org/react";
 import {Link as LinkNextUI} from "@nextui-org/react"
 import { Link, animateScroll } from "react-scroll";
+import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes} from "react-router-dom"
 
 
 
 function App() {
   return (
     <>
-
+    <BrowserRouter>
+      <Routes>
+        <Route path='/signin' element={<SignIn/>}></Route>
+        <Route></Route>
+      </Routes>
+    </BrowserRouter>
 
      <NavBarMejorado className='navbar'></NavBarMejorado>
     
@@ -50,6 +58,10 @@ function App() {
       <Cards></Cards>
       <Text h2 className='centrar'>Soft-Skills  </Text>
       <SoftSkills></SoftSkills>
+    </section>
+    <section className='Contacto'>
+    <Text h1 className='centrar'>Contacto</Text>
+    <Contacto></Contacto>
     </section>
     </>
   );

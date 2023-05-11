@@ -80,7 +80,7 @@
 }
 
 .AcercaDeMi{
-  height: 70vh;
+  /* height: 90vh; */
   padding: 0 10%;
 }
 
@@ -101,3 +101,8 @@
   justify-content:space-around;
   flex-direction: row;
 }
+
+.Contacto{
+  /* height: 70vh; */
+  padding: 0 10%;
+} 

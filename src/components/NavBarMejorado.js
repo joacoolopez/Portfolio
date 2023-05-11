@@ -79,16 +79,16 @@ export default function NavBarMejorado() {
         </Navbar.Content>
         <Navbar.Collapse>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Inicio</Link>
+                <Link onClick={() => {window.scrollTo({top: 0, left: 0, behavior: 'smooth'});}} smooth={true} offset={200} duration={500} block color="secondary" >Inicio</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
                 <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Acerca de mi</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Experiencia</Link>
+                <Link to='segundaparte' smooth={true} offset={200} duration={500} block color="secondary" >Contacto</Link>
             </Navbar.CollapseItem>
 
         </Navbar.Collapse>

@@ -106,17 +106,6 @@ export default function SoftSkills() {
             </Card>
         </Grid>   
     </Grid.Container>
-
-
-
-
-    
-    
-
-    </>
-    
-    
-
-    
+    </>    
   );
 }

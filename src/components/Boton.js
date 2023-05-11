@@ -1,55 +1,27 @@
 import React from 'react';
 import { Button } from '@nextui-org/react';
 import confetti from 'canvas-confetti';
+import { Button as B} from '@mui/material'
 
 const CustomButton = () => {
   const handleConfetti = () => {
     confetti({
-        particleCount: 250,
+        particleCount: 550,
         spread: 180,
-        origin: { x: 0 }
+
     });
   };
 
   return (
-    <Button
-      auto
-      rounded
-      ripple={false}
-      size="xl"
+    <>
+      <Button 
+      color="secondary"
       onClick={handleConfetti}
-      css={{
-        background: '$white',
-        fontWeight: '$semibold',
-        boxShadow: '$md',
-        position: 'relative',
-        overflow: 'visible',
-        color: '#0F9549',
-        px: '$18',
-        '&:after': {
-          content: '""',
-          position: 'absolute',
-          width: '100%',
-          height: '100%',
-          background: '$white',
-          opacity: 1,
-          borderRadius: '$pill',
-          transition: 'all 0.4s ease'
-        },
-        '&:hover': {
-          transform: 'translateY(-5px)',
-          '&:after': {
-            transform: 'scaleX(1.5) scaleY(1.6)',
-            opacity: 0
-          }
-        },
-        '&:active': {
-          transform: 'translateY(-2px)'
-        }
-      }}
-    >
-      Click me
-    </Button>
+      >
+        Enviar
+      </Button>
+      <B>hola</B>
+      </>
   );
 };
 
