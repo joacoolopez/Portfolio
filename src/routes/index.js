@@ -10,6 +10,7 @@ import SoftSkills from '../components/SoftSkills';
 import Contacto from '../components/Contacto';
 import SignIn from './SignIn';
 import { Text, Button, Navbar, Input} from "@nextui-org/react";
+import github from '../assets/svg/github.svg';
 
 
 
@@ -24,12 +25,6 @@ function Index() {
         <div>
           <Texto></Texto>
           <div className='botones'>
-            <Button auto color="gradient" rounded bordered className='boton'>
-            <a>Gradient</a>
-            </Button>
-            <Button auto color="gradient" rounded bordered className='boton'>
-            Gradient
-            </Button>
           </div>
         </div>
         <img src={logo} id='jl' />

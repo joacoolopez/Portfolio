@@ -1,5 +1,6 @@
 import { Input, Grid } from "@nextui-org/react";
 import Boton from "./Boton"
+import Button from 'react-bootstrap/Button';
 
 export default function Contacto() {
   return (

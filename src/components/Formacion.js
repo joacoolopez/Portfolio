@@ -3,7 +3,7 @@ import { Collapse, Text, Badge } from "@nextui-org/react";
 export default function Formacion() {
   return (
     <Collapse.Group>
-      <Collapse title="Licenciatura en Gestion de IT - UADE">
+      <Collapse title="Licenciatura en Gestion de IT - UADE" expanded>
         <Text h5>
             Agosto 2021 - Actualidad
         </Text>

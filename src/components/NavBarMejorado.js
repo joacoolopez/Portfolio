@@ -1,6 +1,8 @@
 import { Navbar, Text,  Avatar, Dropdown } from "@nextui-org/react";
 import { Link } from "react-scroll";
+import {Link as L} from "react-router-dom"
 import '../App.css'
+import github from '../assets/svg/linkedin.svg';
 
 export default function NavBarMejorado() {
   const collapseItems = [
@@ -18,7 +20,7 @@ export default function NavBarMejorado() {
 
 
   return (
-      <Navbar isBordered variant="sticky">
+      <Navbar isBordered variant="sticky" maxWidth="fluid">
         <Navbar.Toggle showIn="xs" />
         <Navbar.Brand
           css={{
@@ -37,7 +39,6 @@ export default function NavBarMejorado() {
           activeColor="secondary"
           hideIn="xs"
           variant="highlight-rounded"
-          
         >
         
         
@@ -61,7 +62,7 @@ export default function NavBarMejorado() {
             <Text size="$md" className="navv"> Contacto</Text>
             </Navbar.Item>
         </Link>
-
+        
         </Navbar.Content>
         <Navbar.Content
           css={{
@@ -71,6 +72,17 @@ export default function NavBarMejorado() {
             },
           }}
         >
+          <Dropdown placement="bottom-right">
+            <Navbar.Item>
+                <a href="https://www.linkedin.com/in/joaquinlopez2002/">
+                <Avatar  
+                  size="md"
+                  src={github}
+                />
+                </a>
+            </Navbar.Item>
+            
+          </Dropdown>
         </Navbar.Content>
         <Navbar.Collapse>
             <Navbar.CollapseItem activeColor="secondary">

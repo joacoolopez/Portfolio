@@ -3,7 +3,7 @@ import { Collapse, Text, Badge } from "@nextui-org/react";
 export default function Experiencia() {
   return (
     <Collapse.Group>
-      <Collapse title="BI Trainee - Danone">
+      <Collapse title="BI Trainee - Danone" expanded>
         <Text h5>
             Febrero 2023 - Actualidad
         </Text>

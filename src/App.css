@@ -113,3 +113,43 @@
   height: 100%;
   width: 100%;
 }
+
+.b{
+  background-color: #9750DD;
+  width: 200px;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.b:hover {
+  color: white;
+  background-color: #8026da;
+}
+
+.button {
+  font-family: inherit;
+
+  background: #9750DD;
+  color: white;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin: 20px;
+
+}
+
+.p-button{
+  color: #FFFFFF;
+  font-family: 'Switzer';
+  font-weight: 600;
+  font-size: 32px;
+  margin: 0;
+  display: block;
+  margin-left: 0.3em;
+}

@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button } from '@nextui-org/react';
+//import { Button } from '@nextui-org/react';
 import confetti from 'canvas-confetti';
 import { Button as B} from '@mui/material'
+import {Button as Bu} from 'react-bootstrap'
 
 const CustomButton = () => {
   const handleConfetti = () => {
@@ -13,15 +14,7 @@ const CustomButton = () => {
   };
 
   return (
-    <>
-      <Button 
-      color="secondary"
-      onClick={handleConfetti}
-      >
-        Enviar
-      </Button>
-      <B>hola</B>
-      </>
+      <button className='b' color='#9750DD' onClick={handleConfetti}>Enviar</button>
   );
 };
 
