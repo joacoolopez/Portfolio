@@ -16,11 +16,6 @@ export default function NavBarMejorado() {
     "Log Out",
   ];
 
-        {/* <Link className="link" to='segundaparte' smooth={true} offset={200} duration={500} color="secondary" >
-            <Navbar.Item>
-            Experiencia
-            </Navbar.Item>
-        </Link> */}
 
   return (
       <Navbar isBordered variant="sticky">

@@ -106,3 +106,10 @@
   /* height: 70vh; */
   padding: 0 10%;
 } 
+
+.signin{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
