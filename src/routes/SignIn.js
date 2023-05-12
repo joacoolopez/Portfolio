@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider, BrowserRouter, Route, Routes, Link
 export default function SignIn() {
   return (
     <div className="signin">
-        <Grid.Container gap={2} >
+        <Grid.Container gap={2} justify="center">
             <Grid xs={12} justify="center">
                 <Input
                 clearable
