@@ -1,8 +1,6 @@
 import React from 'react';
 //import { Button } from '@nextui-org/react';
 import confetti from 'canvas-confetti';
-import { Button as B} from '@mui/material'
-import {Button as Bu} from 'react-bootstrap'
 
 const CustomButton = () => {
   const handleConfetti = () => {

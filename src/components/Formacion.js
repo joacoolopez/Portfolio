@@ -8,7 +8,7 @@ export default function Formacion() {
             Agosto 2021 - Actualidad
         </Text>
         <Text>
-        Durante mi paso en Danone me encuentro realizando tableros de Power BI y ayudando al equipo de Data to Insight a migrar todas las bases de datos que se encuentra On-Premise a la nube. Mas especificamente a Azure. Ademas, realizo tareas de ETL con Informatica Cloud y automatizacion con Stonebranch.
+          Me encuentro estudiando la Lic. en Gestion de Tecnologia de Informacion en la Universidad Argentina de la Empresa donde tengo materias tanto de programacion como administrativas. Actualmente tengo 14 materias aprobadas como Paradigma Orientado a Objetos, Programacion 2, Sistemas de Informacion 2 y Gestion de Personas en Empresas Tecnologicas.
         </Text>
       </Collapse>
       <Collapse title="Bachiller Orientado en Ciencias Economicas - Colegio Eccleston de Temperley">
@@ -16,7 +16,7 @@ export default function Formacion() {
             Marzo 2015 - Diciembre 2020
         </Text>
         <Text>
-        Durante mi paso en Danone me encuentro realizando tableros de Power BI y ayudando al equipo de Data to Insight a migrar todas las bases de datos que se encuentra On-Premise a la nube. Mas especificamente a Azure. Ademas, realizo tareas de ETL con Informatica Cloud y automatizacion con Stonebranch.
+        En mi paso por la secundaria me destacaba en matematica y economia empresarial. Mi mayor interes siempre fueron las materias de computacion y de marketing.
         </Text>
       </Collapse>
     </Collapse.Group>

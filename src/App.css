@@ -157,3 +157,8 @@
 .principal{
   margin: 50px !important;
 }
+
+
+.cardFortalezas{
+  display: flex;
+}

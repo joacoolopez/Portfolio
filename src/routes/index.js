@@ -1,6 +1,6 @@
 import logo from '../assets/img/jl2.png';
 import '../App.css';
-//import NavBar from './components/NavBar';
+import Fortalezas from '../components/Fortalezas';
 import NavBarMejorado from '../components/NavBarMejorado';
 import Texto from '../components/TextoJL';
 import Experiencia from '../components/Experiencia';
@@ -8,10 +8,7 @@ import Formacion from '../components/Formacion';
 import Cards from '../components/Cards';
 import SoftSkills from '../components/SoftSkills';
 import Contacto from '../components/Contacto';
-import SignIn from './SignIn';
-import { Text, Button, Navbar, Input} from "@nextui-org/react";
-import github from '../assets/svg/github.svg';
-
+import { Text} from "@nextui-org/react";
 
 
 
@@ -41,8 +38,10 @@ function Index() {
       <Text h1 className='centrar principal acerca'>Acerca de Mi</Text>
       <Text h2 className='centrar'>Tecnologias</Text>
       <Cards></Cards>
-      <Text h2 className='centrar'>Soft-Skills  </Text>
+      <Text h2 className='centrar'>Soft-Skills</Text>
       <SoftSkills></SoftSkills>
+      <Text h2 className='centrar'>Fortalezas</Text>
+      <Fortalezas></Fortalezas>
     </section>
     <section className='Contacto principal'>
     <Text h1 className='centrar principal'>Contacto</Text>
