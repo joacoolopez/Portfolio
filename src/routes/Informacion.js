@@ -4,6 +4,7 @@ import { Table } from "@nextui-org/react";
 export default function Informacion() {
   return (
     <Table
+      color={'secondary'}
       aria-label="Example static collection table"
       css={{
         height: "auto",
@@ -18,24 +19,24 @@ export default function Informacion() {
       </Table.Header>
       <Table.Body>
         <Table.Row key="1">
-          <Table.Cell>Tony Reichert</Table.Cell>
-          <Table.Cell>fgdgd@gfg.com</Table.Cell>
-          <Table.Cell>Active</Table.Cell>
+          <Table.Cell>Mario Alberto</Table.Cell>
+          <Table.Cell>mario@gmail.com</Table.Cell>
+          <Table.Cell>1140402020</Table.Cell>
         </Table.Row>
         <Table.Row key="2">
-          <Table.Cell>Zoey Lang</Table.Cell>
-          <Table.Cell>Technical Lead</Table.Cell>
-          <Table.Cell>Paused</Table.Cell>
+          <Table.Cell>Juan Rodriguez</Table.Cell>
+          <Table.Cell>jjpedro@yahoo.com</Table.Cell>
+          <Table.Cell>1112341234</Table.Cell>
         </Table.Row>
         <Table.Row key="3">
-          <Table.Cell>Jane Fisher</Table.Cell>
-          <Table.Cell>Senior Developer</Table.Cell>
-          <Table.Cell>Active</Table.Cell>
+          <Table.Cell>Domingo Sanchez</Table.Cell>
+          <Table.Cell>domingo@hotmail.com</Table.Cell>
+          <Table.Cell>1122223344</Table.Cell>
         </Table.Row>
         <Table.Row key="4">
-          <Table.Cell>William Howard</Table.Cell>
-          <Table.Cell>Community Manager</Table.Cell>
-          <Table.Cell>Vacation</Table.Cell>
+          <Table.Cell>William Messi</Table.Cell>
+          <Table.Cell>willy@google.com</Table.Cell>
+          <Table.Cell>1144556677</Table.Cell>
         </Table.Row>
       </Table.Body>
     </Table>
