@@ -5,19 +5,6 @@ import '../App.css'
 import github from '../assets/svg/linkedin.svg';
 
 export default function NavBarMejorado() {
-  const collapseItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
-
 
   return (
       <Navbar isBordered variant="sticky" maxWidth="fluid">
@@ -31,7 +18,7 @@ export default function NavBarMejorado() {
         >
           {/* logo */}
           <Text b color="inherit" hideIn="xs">
-            ACME
+            
           </Text>
         </Navbar.Brand>
         <Navbar.Content
