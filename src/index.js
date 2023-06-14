@@ -7,9 +7,17 @@ import reportWebVitals from './reportWebVitals';
 import {NextUIProvider , createTheme } from "@nextui-org/react"
 
 const darkTheme = createTheme({
-  type: "dark", // it could be "light" or "dark"
+  type: "light", // it could be "light" or "dark"
   theme: {
     colors: {
+      white: '#ffffff',
+      black: '#000000',
+      grey: '#16181A',
+
+      background: "$white",
+      backgroundAlpha: "rgba(255, 255, 255, 0.8)", // used for semi-transparent backgrounds like the navbar
+      foreground: "$black",
+      backgroundContrast: "$grey",
       // brand colors
       primaryLight: '$green200',
       primaryLightHover: '$green300',

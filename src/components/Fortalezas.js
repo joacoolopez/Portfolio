@@ -12,7 +12,7 @@ export default function Fortalezas() {
             <Grid.Container>
                 <Grid xs={6} justify="center">
                     <Card.Body >
-                        <Text h2 justify="center" className="centrar"  >Curioso</Text>
+                        <Text h2 justify="center" className="centrar" css={{color: "white"}} >Curioso</Text>
                     </Card.Body>
                 </Grid>
                 <Grid xs={6} justify="center">
@@ -26,7 +26,7 @@ export default function Fortalezas() {
             <Grid.Container>
                 <Grid xs={6} justify="center">
                     <Card.Body >
-                        <Text h2 justify="center" className="centrar arreglo"  >Objetivo</Text>
+                        <Text h2 justify="center" className="centrar arreglo" css={{color: "white"}} >Objetivo</Text>
                     </Card.Body>
                 </Grid>
                 <Grid xs={6} justify="center">
@@ -40,7 +40,7 @@ export default function Fortalezas() {
             <Grid.Container>
                 <Grid xs={6} justify="center">
                     <Card.Body >
-                        <Text h2 justify="center" className="centrar arreglo">Escucha</Text>
+                        <Text h2 justify="center" className="centrar arreglo" css={{color: "white"}}>Escucha</Text>
                     </Card.Body>
                 </Grid>
                 <Grid xs={6} justify="center">

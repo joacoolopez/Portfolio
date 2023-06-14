@@ -14,8 +14,8 @@ export default function App() {
     <Grid.Container gap={2} justify="space-around">
  
         <Grid xs={6} sm={2}>
-          <Card>
-            <Card.Body css={{ p: 10 }}>
+          <Card >
+            <Card.Body css={{ p: 10}}>
               <Card.Image img src={java}height={120}></Card.Image>
             </Card.Body>
           </Card>
