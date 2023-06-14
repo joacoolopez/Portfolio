@@ -13,7 +13,7 @@ export default function Texto() {
             className="texto"
             h1
             css={{
-            color: "White",
+            color: "black",
             marginRight: "10px"
             }}
             weight={"light"}
