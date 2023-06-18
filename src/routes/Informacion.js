@@ -1,7 +1,18 @@
 import '../App.css'
 import { Table } from "@nextui-org/react";
+import { useEffect, useState } from 'react';
+import getProducts from '../controllers/recluiter.api';
 
 export default function Informacion() {
+
+  const [recluiter, setRecluiter] = useState([])
+  const accessToken = sessionStorage.getItem('access-token')
+
+  useEffect(()=>{
+    getProducts(accessToken, setRecluiter)
+  }, [setRecluiter, accessToken]
+  );
+
   return (
     <Table
       color={'secondary'}
@@ -18,26 +29,15 @@ export default function Informacion() {
         <Table.Column>NUMERO DE TELEFONO</Table.Column>
       </Table.Header>
       <Table.Body>
-        <Table.Row key="1">
-          <Table.Cell>Mario Alberto</Table.Cell>
-          <Table.Cell>mario@gmail.com</Table.Cell>
-          <Table.Cell>1140402020</Table.Cell>
-        </Table.Row>
-        <Table.Row key="2">
-          <Table.Cell>Juan Rodriguez</Table.Cell>
-          <Table.Cell>jjpedro@yahoo.com</Table.Cell>
-          <Table.Cell>1112341234</Table.Cell>
-        </Table.Row>
-        <Table.Row key="3">
-          <Table.Cell>Domingo Sanchez</Table.Cell>
-          <Table.Cell>domingo@hotmail.com</Table.Cell>
-          <Table.Cell>1122223344</Table.Cell>
-        </Table.Row>
-        <Table.Row key="4">
-          <Table.Cell>William Messi</Table.Cell>
-          <Table.Cell>willy@google.com</Table.Cell>
-          <Table.Cell>1144556677</Table.Cell>
-        </Table.Row>
+        {recluiter.map((recluiter, index) => {
+          return (
+            <Table.Row key={recluiter._id}>
+              <Table.Cell>{recluiter.name}</Table.Cell>
+              <Table.Cell>{recluiter.lastname}</Table.Cell>
+              <Table.Cell>{recluiter.email}</Table.Cell>
+            </Table.Row>
+          )
+        })}
       </Table.Body>
     </Table>
   );
