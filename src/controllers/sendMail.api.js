@@ -1,4 +1,4 @@
-const register = async (name,lastname,email,password) => {
+const sendMail = async (name,lastname,email,phone,comment) => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     
@@ -6,7 +6,9 @@ const register = async (name,lastname,email,password) => {
       "name": name,
       "lastname": lastname,
       "email": email,
-      "password": password
+      "nrotelefono": phone,
+      "comentario": comment,
+      "estado": true
     });
     
     var requestOptions = {
@@ -17,9 +19,9 @@ const register = async (name,lastname,email,password) => {
       mode:'cors'
     };
     
-    let response = await fetch("http://localhost:8080/api/user/create", requestOptions);
+    let response = await fetch("http://localhost:8080/api/mail/create", requestOptions);
     let jsonData = await response.json();
     return jsonData;
 }
 
-export default register;
+export default sendMail;

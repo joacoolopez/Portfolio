@@ -77,7 +77,7 @@ export default function SignIn() {
             </Grid>
             <Grid xs={12}justify="center">
                 {isLoggedIn && (
-                <Link to="/registrarse">
+                <Link to="/register">
                   <Button color="secondary">Registrar</Button>
                 </Link>
                 

@@ -32,15 +32,17 @@ export default function Informacion() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let response = await register(name,lastname,email,password);
-        console.log(response);
-        if (response.estado){
-          sessionStorage.setItem("access-token",response.token);
-          alert("Usuario creado exitosamente")
-          navigate("/signin");
-          
+
+        if (name==='' || lastname==='' || email==='' || password===''){
+            alert("Campo invalido")
         }else{
-          alert("Contrasena incorrecta")
+            let response = await register(name,lastname,email,password);
+            if (response.estado){
+            alert("Usuario creado exitosamente")
+            navigate("/signin");
+            } else {
+            alert("No se pueden crear mas de un usuario")
+            }
         }
       };
       
