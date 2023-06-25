@@ -1,27 +1,26 @@
 import { Input, Grid, Button } from "@nextui-org/react";
 import '../App.css'
-import {Link, useNavigate} from "react-router-dom"
-import React, { useState, useEffect } from 'react';
-import login from "../controllers/login.api";
-import countUser from "../controllers/countUser.api";
+import {useNavigate} from "react-router-dom"
+import React, { useState } from 'react';
+import register from "../controllers/register.api";
 
+export default function Informacion() {
 
-
-export default function SignIn() {
-
+    const [name, setName] = useState('');
+    const [lastname, setLastname] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-    useEffect(()=>{
-      countUser(setIsLoggedIn)
-    }, [setIsLoggedIn]
-    );
-
-    
-
 
     const navigate = useNavigate();
+
+
+    const handleNameChange = (e) => {
+        setName(e.target.value);
+      };
+
+    const handleLastnameChange = (e) => {
+        setLastname(e.target.value);
+      };
 
     const handleEmailChange = (e) => {
         setEmail(e.target.value);
@@ -33,23 +32,44 @@ export default function SignIn() {
     
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let response = await login(email,password);
+        let response = await register(name,lastname,email,password);
         console.log(response);
         if (response.estado){
           sessionStorage.setItem("access-token",response.token);
-          navigate("/informacion");
+          alert("Usuario creado exitosamente")
+          navigate("/signin");
+          
         }else{
           alert("Contrasena incorrecta")
         }
       };
       
-
-
-
-  return (
-    <div className="signin">
+    return (
+      <div className="signin">
         <form onSubmit={handleSubmit}>
         <Grid.Container gap={2} justify="center">
+            <Grid xs={12} justify="center">
+                <Input
+                value={name}
+                clearable
+                color="secondary"
+                type="text"
+                label="Name"
+                placeholder="Enter your name"
+                onChange={handleNameChange}
+                />
+            </Grid>
+            <Grid xs={12} justify="center">
+                <Input
+                value={lastname}
+                clearable
+                color="secondary"
+                type="text"
+                label="Last Name"
+                placeholder="Enter your lastname"
+                onChange={handleLastnameChange}
+                />
+            </Grid>
             <Grid xs={12} justify="center">
                 <Input
                 value={email}
@@ -73,21 +93,12 @@ export default function SignIn() {
                 />
             </Grid>
             <Grid xs={12}justify="center">
-                <Button color="secondary" type="submit">Ingresar</Button>
-            </Grid>
-            <Grid xs={12}justify="center">
-                {isLoggedIn && (
-                <Link to="/registrarse">
-                  <Button color="secondary">Registrar</Button>
-                </Link>
-                
-                )}  
-
+                <Button color="secondary" type="submit">Registrar</Button>
             </Grid>
         </Grid.Container>
         </form>
         
     </div>
-    
-  );
-}
+    );
+  }
+  

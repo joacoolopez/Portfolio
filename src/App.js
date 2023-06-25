@@ -11,6 +11,7 @@ import Contacto from './components/Contacto';
 import Index from './routes/index'
 import SignIn from './routes/SignIn';
 import Informacion from './routes/Informacion';
+import Registrarse from './routes/Registrarse';
 import { Text, Button, Navbar, Input} from "@nextui-org/react";
 import {Link as LinkNextUI} from "@nextui-org/react"
 import { Link, animateScroll } from "react-scroll";
@@ -27,6 +28,7 @@ function App() {
         <Route path='/' element={<Index/>}></Route>
         <Route path='/signin' element={<SignIn/>}></Route>
         <Route path='/informacion' element={<Informacion/>}></Route>
+        <Route path='/registrarse' element={<Registrarse/>}></Route>
       </Routes>
     </BrowserRouter>
     

@@ -1,8 +1,10 @@
-const login = async (email,password) => {
+const login = async (name,lastname,email,password) => {
     var myHeaders = new Headers();
     myHeaders.append("Content-Type", "application/json");
     
     var raw = JSON.stringify({
+      "name": name,
+      "lastname": lastname,
       "email": email,
       "password": password
     });
@@ -15,9 +17,8 @@ const login = async (email,password) => {
       mode:'cors'
     };
     
-    let response = await fetch("http://localhost:8080/api/user/login", requestOptions);
+    let response = await fetch("http://localhost:8080/api/user/create", requestOptions);
     let jsonData = await response.json();
-
     return jsonData;
 }
 

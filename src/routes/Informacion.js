@@ -24,9 +24,11 @@ export default function Informacion() {
       selectionMode="single"
     >
       <Table.Header>
-        <Table.Column>NOMBRE Y APELLIDO</Table.Column>
+        <Table.Column>NOMBRE</Table.Column>
+        <Table.Column>APELLIDO</Table.Column>
         <Table.Column>MAIL</Table.Column>
         <Table.Column>NUMERO DE TELEFONO</Table.Column>
+        <Table.Column>COMENTARIO</Table.Column>
       </Table.Header>
       <Table.Body>
         {recluiter.map((recluiter, index) => {
@@ -35,6 +37,8 @@ export default function Informacion() {
               <Table.Cell>{recluiter.name}</Table.Cell>
               <Table.Cell>{recluiter.lastname}</Table.Cell>
               <Table.Cell>{recluiter.email}</Table.Cell>
+              <Table.Cell>{recluiter.nrotelefono}</Table.Cell>
+              <Table.Cell>{recluiter.comentario}</Table.Cell>
             </Table.Row>
           )
         })}
