@@ -37,7 +37,7 @@ export default function SignIn() {
         console.log(response);
         if (response.estado){
           sessionStorage.setItem("access-token",response.token);
-          navigate("/informacion");
+          navigate("/information");
         }else{
           alert("Contrasena incorrecta")
         }
