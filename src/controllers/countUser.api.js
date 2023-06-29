@@ -12,7 +12,8 @@ const countUser =  async (setIsLoggedIn) => {
       
       let response = await fetch("http://localhost:8080/api/user/cant", requestOptions);
       let jsonData = await response.json();
-      setIsLoggedIn(!jsonData);
+      
+      setIsLoggedIn(!jsonData.estadoCountUser);
     
 }
 export default countUser;
