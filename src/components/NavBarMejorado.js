@@ -39,9 +39,19 @@ export default function NavBarMejorado() {
             <Text size="$md" className="navv"> Formacion</Text>
             </Navbar.Item>
         </Link>
-        <Link  to='AcercaDeMi' smooth={true} offset={-70} duration={500} color="text">
+        <Link  to='tecnologias' smooth={true} offset={-70} duration={500} color="text">
             <Navbar.Item block color="secondary">
-            <Text size="$md" className="navv"> Acerca de mi</Text>
+            <Text size="$md" className="navv"> Tecnologias</Text>
+            </Navbar.Item>
+        </Link>
+        <Link  to='soft' smooth={true} offset={-70} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Soft-Skills</Text>
+            </Navbar.Item>
+        </Link>
+        <Link  to='fort' smooth={true} offset={-70} duration={500} color="text">
+            <Navbar.Item block color="secondary">
+            <Text size="$md" className="navv"> Fortalezas</Text>
             </Navbar.Item>
         </Link>
         <Link  to='Contacto' smooth={true} offset={200} duration={500} color="text">
@@ -79,7 +89,13 @@ export default function NavBarMejorado() {
                 <Link to='segundaparte' smooth={true} offset={-70} duration={500} block color="secondary" >Formacion</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
-                <Link to='AcercaDeMi' smooth={true} offset={-70} duration={500} block color="secondary" >Acerca de mi</Link>
+                <Link to='tecnologias' smooth={true} offset={-70} duration={500} block color="secondary" >Tecnologias</Link>
+            </Navbar.CollapseItem>
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='soft' smooth={true} offset={-70} duration={500} block color="secondary" >Soft-Skills</Link>
+            </Navbar.CollapseItem>
+            <Navbar.CollapseItem activeColor="secondary">
+                <Link to='fort' smooth={true} offset={-70} duration={500} block color="secondary" >Fortalezas</Link>
             </Navbar.CollapseItem>
             <Navbar.CollapseItem activeColor="secondary">
                 <Link to='Contacto' smooth={true} offset={200} duration={500} block color="secondary" >Contacto</Link>

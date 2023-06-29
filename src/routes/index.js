@@ -35,12 +35,12 @@ function Index() {
       <Formacion></Formacion>
     </section>
     <section className='AcercaDeMi'>
-      <Text h1 className='centrar principal acerca'>Acerca de Mi</Text>
-      <Text h2 className='centrar'>Tecnologias</Text>
+      {/* <Text h1 className='centrar principal acerca'>Acerca de Mi</Text> */}
+      <Text h1 className='centrar principal tecnologias'>Tecnologias</Text>
       <Cards></Cards>
-      <Text h2 className='centrar'>Soft-Skills</Text>
+      <Text h1 className='centrar principal soft'>Soft-Skills</Text>
       <SoftSkills></SoftSkills>
-      <Text h2 className='centrar'>Fortalezas</Text>
+      <Text h1 className='centrar principal fort'>Fortalezas</Text>
       <Fortalezas></Fortalezas>
     </section>
     <section className='Contacto principal'>
