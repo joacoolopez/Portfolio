@@ -1,6 +1,7 @@
 import '../App.css'
-import { Table } from "@nextui-org/react";
+import { Table, Button, NavBar, Navbar } from "@nextui-org/react";
 import { useEffect, useState } from 'react';
+import {useNavigate} from "react-router-dom"
 import getProducts from '../controllers/recluiter.api';
 
 export default function Informacion() {
@@ -8,12 +9,37 @@ export default function Informacion() {
   const [recluiter, setRecluiter] = useState([])
   const accessToken = sessionStorage.getItem('access-token')
 
-  useEffect(()=>{
-    getProducts(accessToken, setRecluiter)
-  }, [setRecluiter, accessToken]
-  );
+
+  // useEffect(()=>{
+  //   getProducts(accessToken, setRecluiter)
+  // }, [setRecluiter, accessToken]
+  // );
+
+  const navigate = useNavigate();
+
+  function eliminarToken(){
+      sessionStorage.clear(accessToken)
+      navigate("/signin")
+  }
+  
+  useEffect(() => {
+    const accessToken = sessionStorage.getItem('access-token');
+    if (!accessToken) {
+      // Si el token no está presente, redirige al usuario a la página de inicio de sesión
+      navigate('/signin');
+    } else {
+      // Si el token está presente, realiza las operaciones necesarias
+      getProducts(accessToken, setRecluiter);
+    }
+  }, [navigate]);
 
   return (
+    <>
+      <Navbar isBordered maxWidth="fluid">
+        <Navbar.Content hideIn="xs" css={{ marginLeft: 'auto' }}>
+          <Navbar.Item><Button color="secondary" auto onClick={eliminarToken}>Salir</Button></Navbar.Item>
+        </Navbar.Content>
+      </Navbar>
     <Table
       color={'secondary'}
       aria-label="Example static collection table"
@@ -44,5 +70,6 @@ export default function Informacion() {
         })}
       </Table.Body>
     </Table>
+    </>
   );
 }
